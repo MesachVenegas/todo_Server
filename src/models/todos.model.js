@@ -21,6 +21,10 @@ const Todo = db.define('todos', {
         defaultValue: false,
         field: 'is_completed'
     }
+},{
+    timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at'
 });
 
 module.exports = Todo;
