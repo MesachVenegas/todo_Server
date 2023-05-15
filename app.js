@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const cors = require('cors');
 require('dotenv').config();
 
+const PORT = process.env.SERVER_PORT || 8000;
+
 const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
@@ -19,6 +21,6 @@ db.sync()
 .then( () => console.log('Base de datos sincronizada con éxito'))
 .catch( (err) => console.error(err) );
 
-app.listen(process.env.SERVER_PORT, () =>{
-    console.log(`Servidor escuchando en el el puerto ${process.env.SERVER_PORT}`)
+app.listen(PORT, () =>{
+    console.log(`Servidor escuchando en el el puerto ${PORT}`)
 })
