@@ -61,7 +61,7 @@ you got a response like this:
     {
         id: 2,
         title: "make shopping",
-        description: "make shopping this fryday"
+        description: "make shopping this fryday",
         is_complete: false
     }
 ```
