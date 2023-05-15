@@ -15,7 +15,7 @@ db.authenticate()
 .then( () => console.log('Conectado a la base de datos'))
 .catch( (err) => console.error(err) );
 
-db.sync( { alter: true } )
+db.sync()
 .then( () => console.log('Base de datos sincronizada con éxito'))
 .catch( (err) => console.error(err) );
 
