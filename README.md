@@ -24,6 +24,12 @@ npm run dev
 
 ---
 
+## End Points
+
+To use the API the url to consume you need is [https://todo-api-qk1z.onrender.com](https://todo-api-qk1z.onrender.com) more  some one of end points, example:
+
+> https://todo-api-qk1z.onrender.com/api/v1/todos
+
 ## Get All Todos
 
 To get all todos available on server the end point is:
