@@ -27,7 +27,14 @@ routes.get('/api/v1/todos', async (req, res) => {
 routes.get('/api/v1/todos/:id', async (req, res) => {
     const { id } = req.params;
     try {
-        const result = await ToDO.findByPk(id)
+        const result = await ToDO.findByPk(id, {
+            attributes: [
+                "id",
+                "title",
+                "description",
+                "is_completed",
+            ]
+        })
         res.send(result);
     }
     catch (err) {
