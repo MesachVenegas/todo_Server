@@ -31,7 +31,7 @@ To get all todos available on server the end point is:
 
 you got a response like this:
 
-```json
+```js
     {
         {
             id: 1,
@@ -57,7 +57,7 @@ To get a specific todo use this endpoint:
 
 you got a response like this:
 
-```json
+```js
     {
         id: 2,
         title: "make shopping",
@@ -73,7 +73,7 @@ To update a todo you need the endpoint `/api/v1/todos/id` and in the request bod
 
 request body:
 
-```json
+```js
     {
         is_complete: true
     }
