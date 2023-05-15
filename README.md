@@ -53,7 +53,7 @@ you got a response like this:
 To get a specific todo use this endpoint:
 ```/api/v1/todos/id```
 
->example /api/v1/todos/2
+> /api/v1/todos/2
 
 you got a response like this:
 
@@ -65,3 +65,27 @@ you got a response like this:
         is_complete: false
     }
 ```
+
+## Update Todo
+
+To update a todo you need the endpoint `/api/v1/todos/id` and in the request body send a json element or object, with the data to change, for example:
+> /api/v1/todos/2
+
+request body:
+
+```json
+    {
+        is_complete: true
+    }
+```
+
+if request is resolved correctly the todo with id 2 change state to completed state false to true. You can modify the state of ToDo, the title or description, you don't received any response of API,
+only a status code of 204.
+
+## Delete ToDo
+
+If you need to delete a todo only make a request to `/api/v1/todos/id` send the id of todo to delete.
+
+> /api/v1/todos/2
+
+and the todo will be deleted, don't send any response of API, only a status code of 200 is everting ok
